@@ -1,15 +1,12 @@
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Layout from '../layouts/Layout'
+import Login from '../components/Login'
 
-export default function Login() {
+const LoginPage = () => {
   return (
-    <div className={styles.container}>
-      <h2>Log In page</h2>
-      <div className={styles.card}>
-        <Link href="/">
-          Link to Home
-        </Link>
-      </div>
-    </div>
+    <Layout>
+      <Login />
+    </Layout>
   )
 }
+
+export default LoginPage

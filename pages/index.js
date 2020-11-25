@@ -1,19 +1,9 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
+import Layout from '../layouts/Layout'
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <Link href="/login">
-          Link to Log In
-        </Link>
-      </div>
-      <div className={styles.card}>
-        <Link href="/dashboard">
-          Link to Dashboard
-        </Link>
-      </div>
-    </div>
-  )
+    <Layout />
+  ) 
 }
+
+export default HomePage
