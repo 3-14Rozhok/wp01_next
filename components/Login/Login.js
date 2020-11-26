@@ -8,7 +8,7 @@ const Login = () => {
       <div className={s.name}>Login Page</div>
       <Button>
         <Link href="/">
-            Home Page
+          <a>Home Page</a>
         </Link>
       </Button>
     </div>

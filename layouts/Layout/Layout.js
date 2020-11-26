@@ -7,12 +7,12 @@ const Layout = ( {children} ) => {
     <div className={s.container}>
       <Button>
         <Link href="/login">
-          Log In
+          <a>Log In</a>
         </Link>
       </Button>
       <Button>
         <Link href="/dashboard">
-          Dashboard
+          <a>Dashboard</a>
         </Link>
       </Button>
       {children}

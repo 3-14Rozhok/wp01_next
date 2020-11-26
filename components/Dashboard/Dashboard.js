@@ -8,7 +8,7 @@ const Dashboard = () => {
       <div className={s.name}>Dashboard Page</div>
       <Button>
         <Link href="/">
-            Home Page
+          <a>Home Page</a>
         </Link>
       </Button>
     </div>
