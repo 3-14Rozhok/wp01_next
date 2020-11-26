@@ -1,7 +1,7 @@
 import Button from '../../shared/Button'
 
 const Dashboard = () => {
-    return <Button href="/" text="Home" />
+    return <Button type="button" href="/" text="Home" />
 }
 
 export default Dashboard

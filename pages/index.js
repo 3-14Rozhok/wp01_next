@@ -1,7 +1,7 @@
-import Layout from '../layouts/Layout'
+import DefaultLayout from '../layouts/DefaultLayout'
 
 const HomePage = () => {
-    return <Layout />
+    return <DefaultLayout />
 }
 
 export default HomePage
