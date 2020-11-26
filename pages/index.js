@@ -1,9 +1,7 @@
 import Layout from '../layouts/Layout'
 
 const HomePage = () => {
-  return (
-    <Layout />
-  ) 
+    return <Layout />
 }
 
 export default HomePage
