@@ -1,7 +1,7 @@
-import Button from '../../shared/Button'
+import DefaultLayout from '../../layouts/DefaultLayout'
 
 const Dashboard = () => {
-    return null
+    return <DefaultLayout>Dashboard</DefaultLayout>
 }
 
 export default Dashboard

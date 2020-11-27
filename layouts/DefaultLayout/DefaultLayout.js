@@ -1,11 +1,11 @@
-import Navbar from '../../components/Navbar'
+import Header from '../../components/Header'
 
 const DefaultLayout = ({ children }) => {
     return (
-        <div>
-            <Navbar />
+        <>
+            <Header />
             {children}
-        </div>
+        </>
     )
 }
 

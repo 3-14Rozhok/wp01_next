@@ -4,12 +4,12 @@ import '../styles/tailwind.css'
 
 function MyApp({ Component, pageProps }) {
     return (
-        <body>
+        <>
             <Head>
                 <title>next</title>
             </Head>
             <Component {...pageProps} />
-        </body>
+        </>
     )
 }
 
