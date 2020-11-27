@@ -1,7 +1,7 @@
 import Button from '../../shared/Button'
 
 const Login = () => {
-    return <Button type="button" href="/" text="Home" />
+    return null
 }
 
 export default Login

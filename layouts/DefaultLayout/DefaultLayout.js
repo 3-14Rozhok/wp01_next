@@ -1,10 +1,9 @@
-import Button from '../../shared/Button'
+import Navbar from '../../components/Navbar'
 
 const DefaultLayout = ({ children }) => {
     return (
         <div>
-            <Button type="button" href="/dashboard" text="Dashboard" />
-            <Button type="button" href="/login" text="Log In" />
+            <Navbar />
             {children}
         </div>
     )
