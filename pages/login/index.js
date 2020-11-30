@@ -1,12 +1,7 @@
-import DefaultLayout from '../../layouts/DefaultLayout'
-import Login from '../../components/Login'
+import LoginLayout from '../../layouts/DefaultLayout'
 
 const LoginPage = () => {
-    return (
-        <DefaultLayout>
-            <Login />
-        </DefaultLayout>
-    )
+    return <LoginLayout title="Login" />
 }
 
 export default LoginPage

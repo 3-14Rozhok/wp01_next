@@ -1,18 +1,16 @@
 import Head from 'next/head'
-import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 
-const DefaultLayout = ({ children, title = 'page' }) => {
+const LoginLayout = ({ children, title = 'Title' }) => {
     return (
-        <div className="h-screen">
+        <>
             <Head>
                 <title>{title}</title>
             </Head>
             <Header />
             {children}
-            <Footer />
-        </div>
+        </>
     )
 }
 
-export default DefaultLayout
+export default LoginLayout

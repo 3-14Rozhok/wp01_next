@@ -1,10 +1,10 @@
-import NavButton from '../../../shared/NavButton'
+import NavButton from './NavButton'
 
 const Navbar = () => {
     return (
-        <div className="flex flex-row justify-start">
+        <div className="absolute top-16 left-8 space-x-8 flex flex-row justify-start">
             <NavButton type="button" href="/" text="Home" />
-            <NavButton type="button" href="/dashboard" text="Dashboard" />
+            <NavButton type="button" href="/post" text="Post" />
             <NavButton type="button" href="/login" text="Log In" />
         </div>
     )
