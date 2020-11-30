@@ -4,7 +4,7 @@ import Post from '../../components/Post'
 const PostPage = () => {
     return (
         <DefaultLayout title="Post">
-            <Post />
+            Post page
         </DefaultLayout>
     )
 }

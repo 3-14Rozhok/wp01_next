@@ -1,7 +1,5 @@
-
-
 const Post = () => {
-    return null
+    return "Post"
 }
 
 export default Post

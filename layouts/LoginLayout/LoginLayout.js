@@ -7,7 +7,6 @@ const LoginLayout = ({ children, title = 'Title' }) => {
             <Head>
                 <title>{title}</title>
             </Head>
-            <Header />
             {children}
         </>
     )

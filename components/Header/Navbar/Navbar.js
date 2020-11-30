@@ -2,7 +2,7 @@ import NavButton from './NavButton'
 
 const Navbar = () => {
     return (
-        <div className="absolute top-16 left-8 space-x-8 flex flex-row justify-start">
+        <div className="relative top-16 left-6 flex flex-row">
             <NavButton type="button" href="/" text="Home" />
             <NavButton type="button" href="/post" text="Post" />
             <NavButton type="button" href="/login" text="Log In" />
