@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../../components/Header'
 
-const LoginLayout = ({ children, title = 'Title' }) => {
+const LoginLayout = ({ children, title }) => {
     return (
         <>
             <Head>

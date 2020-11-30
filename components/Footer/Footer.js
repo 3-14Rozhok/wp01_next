@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
         <>
-            <footer className="sticky bottom-0 h-32 border-t-4">
-                <p className="relative top-1/3 left-1/2">Footer</p>
+            <footer className="bottom-0 h-16 border-t-2 2xl:border-2 2xl:rounded-xl">
+                <p className="relative top-1/3 left-1/2 w-max">Footer</p>
             </footer>
         </>
     )

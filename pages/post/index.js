@@ -4,7 +4,8 @@ import Post from '../../components/Post'
 const PostPage = () => {
     return (
         <DefaultLayout title="Post">
-            Post page
+            <p>Post page</p>
+            <p>Create post</p>
         </DefaultLayout>
     )
 }
