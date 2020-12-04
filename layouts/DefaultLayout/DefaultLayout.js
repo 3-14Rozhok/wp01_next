@@ -7,7 +7,7 @@ const DefaultLayout = ({ children, title }) => {
             <Head>
                 <title>{title}</title>
             </Head>
-            <div className="h-screen 2xl:container 2xl:mx-auto">
+            <div className="h-full w-full">
                 <Header />
                 {children}
             </div>

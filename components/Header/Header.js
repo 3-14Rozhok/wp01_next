@@ -1,12 +1,11 @@
 import Navbar from './Navbar'
+import ItemCategories from './ItemCategories'
 
 const Header = () => {
     return (
-        <header>
+        <div className="p-4">
             <Navbar />
-            {/* <ItemsCategories /> */}
-            {/* <Footer /> */}
-        </header>
+        </div>
     )
 }
 
