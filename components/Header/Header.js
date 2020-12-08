@@ -1,5 +1,4 @@
 import Navbar from './Navbar'
-import ItemCategories from './ItemCategories'
 
 const Header = () => {
     return (
