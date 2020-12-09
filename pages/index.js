@@ -1,15 +1,15 @@
 import DefaultLayout from '../layouts/DefaultLayout'
 import ItemCategories from '../components/ItemCategories'
 import Filters from '../components/Filters'
-import ItemList from '../components/ItemList'
+import Main from '../components/Main'
 
 const HomePage = () => {
     return (
         <DefaultLayout title='Home'>
             <ItemCategories />
-            <div className="flex">
+            <div className="flex justify-center">
                 <Filters />
-                <ItemList />
+                <Main />
             </div>
         </DefaultLayout>
     )
