@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Dropdown = props => {
     const { children, buttonName, buttonStyle, buttonTextStyle, containerStyle, src1, src2, imgStyle } = props
@@ -14,8 +14,8 @@ const Dropdown = props => {
             setFont(' font-medium')
         } else {
             setImage(<img src={src1} className={imgStyle} />)
-            setContent(null)
             setFont(' font-normal')
+            setContent(null)
         }
     }
 

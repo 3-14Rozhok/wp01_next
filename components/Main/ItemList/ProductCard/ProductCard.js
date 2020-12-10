@@ -1,7 +1,7 @@
-const Item = props => {
+const ProductCard = props => {
     const { src, text1, text2, price, rating } = props
     return (
-        <div className="w-64 m-2 h-auto flex-col bg-gray-100 rounded-md">
+        <div className="w-64 m-2 h-auto flex flex-col bg-gray-100 rounded-md">
             <img src={src} className="w-56 h-56 m-4"/>
             <div>{text1}</div>
             <div>{price}</div>
@@ -14,4 +14,4 @@ const Item = props => {
     )
 }
 
-export default Item
+export default ProductCard

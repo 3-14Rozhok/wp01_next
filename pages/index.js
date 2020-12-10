@@ -1,12 +1,12 @@
 import DefaultLayout from '../layouts/DefaultLayout'
-import ItemCategories from '../components/ItemCategories'
+import ProductGroups from '../components/ProductGroups'
 import Filters from '../components/Filters'
 import Main from '../components/Main'
 
 const HomePage = () => {
     return (
         <DefaultLayout title='Home'>
-            <ItemCategories />
+            <ProductGroups />
             <div className="flex justify-center">
                 <Filters />
                 <Main />

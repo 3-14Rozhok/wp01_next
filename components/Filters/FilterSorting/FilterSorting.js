@@ -1,10 +1,10 @@
-import Dropdown from '../../Dropdown'
+import Dropdown from '../../../shared/Dropdown'
 
 const Filter1 = () => {
     return (
         <>
             <Dropdown
-                buttonName="Filter 1"
+                buttonName="Sorting"
                 buttonStyle="relative w-72 h-10 m-2 flex self-center shadow-lg rounded-md"
                 buttonTextStyle="ml-2 self-center text-lg"
                 containerStyle="m-2 bg-blue-50 rounded-md"
