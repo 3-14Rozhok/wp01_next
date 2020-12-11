@@ -2,7 +2,7 @@ import ProductGroup from './ProductGroup'
 
 const ProductGroups = () => {
     return (
-        <div className="h-16 m-4 flex flex-row justify-center items-center text-gray-500 space-x-8">
+        <div className="h-16 m-4 min-w-max flex flex-row justify-center items-center text-gray-500 space-x-8">
             <ProductGroup src="/category1.svg" text="Clothing & Shoes" color="text-blue-600" />
             <ProductGroup src="/category2.svg" text="Entertainment" />
             <ProductGroup src="/category3.svg" text="Music" />

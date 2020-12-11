@@ -5,7 +5,7 @@ const SortPanel = () => {
         <div className="relative flex items-center m-4 h-8">
             <Dropdown
                 buttonName="Sort by"
-                buttonStyle="relative w-28 h-8 mr-2 flex border rounded-md"
+                buttonStyle="relative w-28 h-8 mr-2 flex items-center border rounded-md"
                 buttonTextStyle="pl-2 text-md"
                 containerStyle="absolute left-4 top-10 p-2 flex flex-col items-start bg-blue-50 rounded-md"
                 src1="/filter3.svg"
@@ -19,7 +19,7 @@ const SortPanel = () => {
 
             <Dropdown
                 buttonName="Condition"
-                buttonStyle="relative w-32 h-8 mr-2 flex border rounded-md"
+                buttonStyle="relative w-32 h-8 mr-2 flex items-center border rounded-md"
                 buttonTextStyle="pl-2 text-md"
                 containerStyle="absolute left-36 top-10 p-2 flex flex-col items-start bg-blue-50 rounded-md"
                 src1="/filter3.svg"
@@ -33,7 +33,7 @@ const SortPanel = () => {
 
             <Dropdown
                 buttonName="Delivery options"
-                buttonStyle="relative w-max h-8 flex border rounded-md"
+                buttonStyle="relative w-max h-8 flex items-center border rounded-md"
                 buttonTextStyle="pl-2 pr-10 text-md"
                 containerStyle="absolute left-64 top-10 p-2 bg-blue-50 rounded-md"
                 src1="/filter3.svg"
