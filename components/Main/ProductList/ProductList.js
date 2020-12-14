@@ -1,11 +1,13 @@
-import ProductCard from './ProductCard'
+import Card from './Card'
 
-const ProductList = products => {
+const ProductList = props => {
+    const { list } = props
+
     return (
         <div className="flex flex-wrap" style={{width: '1088px'}}>
-            {products.products.map((product, id) => {
+            {list.map((card, id) => {
                 return <div key={id}>
-                    <ProductCard data={product} />
+                    <Card card={card} />
                 </div>
             })}
         </div>
