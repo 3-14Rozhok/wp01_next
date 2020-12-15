@@ -1,10 +1,17 @@
+import React, { useState } from 'react'
+
+import api from '../../api'
+
 import SortPanel from './SortPanel'
 import ButtonPanel from './ButtonPanel'
 import Related from './Related'
-import ProductList from './ProductList'
+import PeopleList from './PeopleList'
 
-const Main = props => {
-    const { list } = props
+const MainBlock = () => {
+
+    const [people, setPeople] = useState([])
+
+    api('/people/?page=2').then(results => setPeople(results))
 
     return (
         <>
@@ -14,10 +21,10 @@ const Main = props => {
                     <ButtonPanel />
                 </div>
                 <Related />
-                <ProductList list={list} />
+                <PeopleList people={people} />
             </div>
         </>
     )
 }
 
-export default Main
+export default MainBlock
