@@ -1,33 +1,24 @@
 import React, { useState, useEffect } from 'react'
 
 import api from '../../api'
+import store from '../../rematch/store'
 
 import SortPanel from './SortPanel'
 import ButtonPanel from './ButtonPanel'
 import Related from './Related'
 import PeopleList from './PeopleList'
-import { post } from 'ky-universal'
 
 const MainBlock = () => {
     const [people, setPeople] = useState([])
 
     const getPeople = async () => {
         try {
-            const data = await api.get('/people/?page=2')
-            setPeople(data)
-        } catch (error) {
-            console.log(error)
-        }
-    }
-    // post example
-    const post = async () => {
-        const json = {
-            1: 123,
-        }
+            const data = await api.get('people/?page=2').json()
+            setPeople(data.results)
 
-        try {
-            const data = await api.post('https://money-96ae0.firebaseio.com/1.json', json)
-            console.log('post: ', data)
+            // set array to store
+            store.dispatch.people.setPeople(data.results)
+            console.log(store.getState())
         } catch (error) {
             console.log(error)
         }
@@ -35,7 +26,6 @@ const MainBlock = () => {
 
     useEffect(async () => {
         getPeople()
-        post()
     }, [])
 
     return (
