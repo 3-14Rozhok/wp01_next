@@ -16,7 +16,6 @@ const MainBlock = () => {
             const data = await api.get('people/?page=2').json()
             setPeople(data.results)
 
-            // set array to store
             store.dispatch.people.setPeople(data.results)
             console.log(store.getState())
         } catch (error) {

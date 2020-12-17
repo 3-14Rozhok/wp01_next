@@ -1,7 +1,7 @@
 export const people = {
-    state: [0],
+    state: 0,
     reducers: {
-        setPeople(data) {
+        setPeople(state, data) {
             return data
         },
     },
