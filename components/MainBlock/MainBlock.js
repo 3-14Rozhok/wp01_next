@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import api from '../../api'
-import store from '../../rematch/store'
+import store from '../../store'
 
 import SortPanel from './SortPanel'
 import ButtonPanel from './ButtonPanel'
@@ -13,18 +13,19 @@ const MainBlock = () => {
 
     const getPeople = async () => {
         try {
+            //запрос данных
             const data = await api.get('people/?page=2').json()
-            setPeople(data.results)
-
+            // запись данных в store
             store.dispatch.people.setPeople(data.results)
-            console.log(store.getState())
         } catch (error) {
             console.log(error)
         }
     }
 
     useEffect(async () => {
-        getPeople()
+        await getPeople()
+        // чтение данных из store
+        setPeople(store.getState().people.data)
     }, [])
 
     return (
