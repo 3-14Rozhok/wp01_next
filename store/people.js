@@ -2,7 +2,7 @@ import api from '../api'
 
 const people = {
     state: {
-        data: [0],
+        data: [],
     },
     reducers: {
         setPeople(state, data) {
@@ -12,8 +12,9 @@ const people = {
     effects: dispatch => ({
         async getPeople(payload, rootState) {
             try {
-                const data = await api.get('people/?page=2').json()
+                const data = await api.fetchData.fetchPeople('people/?page=2')
                 await dispatch.people.setPeople(data.results)
+                await dispatch.creds.setCreds(data.results)
             } catch (error) {
                 console.log(error)
             }
