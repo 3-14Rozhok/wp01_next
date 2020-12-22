@@ -14,7 +14,6 @@ const people = {
             try {
                 const data = await api.fetchData.fetchPeople('people/?page=2')
                 await dispatch.people.setPeople(data.results)
-                await dispatch.creds.setCreds(data.results)
             } catch (error) {
                 console.log(error)
             }
