@@ -2,3 +2,8 @@
     border: 1px red solid;
     outline-width: 0px;
 }
+
+.ant-btn {
+    height: 3rem;
+    width: 12rem;
+}

@@ -7,7 +7,7 @@ const DefaultLayout = ({ children, title }) => {
             <Head>
                 <title>{title}</title>
             </Head>
-            <div className="h-full w-full">
+            <div className="h-full w-full dark:bg-gray-700">
                 <Header />
                 {children}
             </div>

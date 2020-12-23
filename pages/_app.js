@@ -1,6 +1,5 @@
 import { Provider } from 'react-redux'
 
-import 'antd/dist/antd.css'
 import '../styles/tailwind.css'
 
 import store from '../store'
