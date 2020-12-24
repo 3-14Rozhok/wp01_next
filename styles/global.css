@@ -7,3 +7,11 @@
     height: 3rem;
     width: 12rem;
 }
+
+.dark .ant-btn {
+    background-color: black;
+}
+
+.dark .ant-input {
+    background-color: black;
+}

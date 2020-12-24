@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTheme } from 'next-themes'
 
 import { Button } from 'antd'
 
@@ -9,27 +10,35 @@ import PeopleList from './PeopleList'
 
 const MainBlock = props => {
     const { people, getPeople } = props
-    const [theme, setTheme] = useState('light')
+    const { theme, setTheme } = useTheme()
 
     const toggleTheme = async event => {
-        if (localStorage.theme === 'light') {
-            localStorage.theme = 'dark'
+        if (theme === 'light') {
             setTheme('dark')
         } else {
-            localStorage.theme = 'light'
             setTheme('light')
         }
     }
 
-    useEffect(async () => {
-        if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
-            document.querySelector('html').classList.add('dark')
-            console.log('dark on')
-        } else {
-            document.querySelector('html').classList.remove('dark')
-            console.log('dark off')
-        }
-    }, [theme])
+    // const toggleTheme = async event => {
+    //     if (localStorage.theme === 'light') {
+    //         localStorage.theme = 'dark'
+    //         setTheme('dark')
+    //     } else {
+    //         localStorage.theme = 'light'
+    //         setTheme('light')
+    //     }
+    // }
+
+    // useEffect(async () => {
+    //     if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
+    //         document.querySelector('html').classList.add('dark')
+    //         console.log('dark on')
+    //     } else {
+    //         document.querySelector('html').classList.remove('dark')
+    //         console.log('dark off')
+    //     }
+    // }, [theme])
 
     useEffect(async () => {
         await getPeople()
@@ -43,7 +52,7 @@ const MainBlock = props => {
             </div>
             <Related />
 
-            <Button type="primary" className="dark:bg-black" onClick={event => toggleTheme(event)}>
+            <Button type="primary" onClick={event => toggleTheme(event)}>
                 Change theme
             </Button>
 
