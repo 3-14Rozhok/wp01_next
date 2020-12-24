@@ -13,34 +13,6 @@ const MainBlock = props => {
 
     const { theme, setTheme } = useTheme()
 
-    // const toggleTheme = async event => {
-    //     if (theme === 'light') {
-    //         setTheme('dark')
-    //     } else {
-    //         setTheme('light')
-    //     }
-    // }
-
-    // const toggleTheme = async event => {
-    //     if (localStorage.theme === 'light') {
-    //         localStorage.theme = 'dark'
-    //         setTheme('dark')
-    //     } else {
-    //         localStorage.theme = 'light'
-    //         setTheme('light')
-    //     }
-    // }
-
-    // useEffect(async () => {
-    //     if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
-    //         document.querySelector('html').classList.add('dark')
-    //         console.log('dark on')
-    //     } else {
-    //         document.querySelector('html').classList.remove('dark')
-    //         console.log('dark off')
-    //     }
-    // }, [theme])
-
     useEffect(async () => {
         await getPeople()
     }, [])

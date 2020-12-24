@@ -1,18 +1,7 @@
+@import './input.css';
+@import './button.css';
+
 * {
     border: 1px red solid;
     outline-width: 0px;
-}
-
-.ant-btn {
-    height: 3rem;
-    width: 8rem;
-    margin: 0.5rem;
-}
-
-.dark .ant-btn {
-    background-color: black;
-}
-
-.dark .ant-input {
-    background-color: black;
 }
