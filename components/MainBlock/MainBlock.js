@@ -10,15 +10,16 @@ import PeopleList from './PeopleList'
 
 const MainBlock = props => {
     const { people, getPeople } = props
+
     const { theme, setTheme } = useTheme()
 
-    const toggleTheme = async event => {
-        if (theme === 'light') {
-            setTheme('dark')
-        } else {
-            setTheme('light')
-        }
-    }
+    // const toggleTheme = async event => {
+    //     if (theme === 'light') {
+    //         setTheme('dark')
+    //     } else {
+    //         setTheme('light')
+    //     }
+    // }
 
     // const toggleTheme = async event => {
     //     if (localStorage.theme === 'light') {
@@ -52,8 +53,11 @@ const MainBlock = props => {
             </div>
             <Related />
 
-            <Button type="primary" onClick={event => toggleTheme(event)}>
-                Change theme
+            <Button type="primary" onClick={() => setTheme('dark')}>
+                Dark
+            </Button>
+            <Button type="primary" onClick={() => setTheme('light')}>
+                Light
             </Button>
 
             <PeopleList people={people.data} />
