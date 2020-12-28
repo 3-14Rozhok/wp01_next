@@ -1,0 +1,4 @@
+.ant-input {
+    @apply w-full;
+    @apply bg-primary;
+}
