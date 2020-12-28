@@ -25,17 +25,13 @@ const MainBlock = props => {
                 <ButtonPanel />
             </div>
             <Related /> */}
-
             <Button type="primary" onClick={() => setTheme('dark')}>
                 Dark
             </Button>
             <Button type="primary" onClick={() => setTheme('light')}>
                 Light
             </Button>
-
             <Input placeholder="input search text" addonAfter={<SearchOutlined />} />
-
-            {/* <PeopleList people={people.data} /> */}
         </div>
     )
 }
